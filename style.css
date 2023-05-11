@@ -1,0 +1,148 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  @font-face{
+    font-family: "哥特";
+    src: url("哥特.otf");
+  }
+  
+  @font-face{
+    font-family: "哥特";
+    src: url("哥特.otf");
+  
+  
+  }
+  
+  body {
+    margin: 0;
+    padding: 2;
+    font-family: "哥特";
+    font-weight: 100;
+    line-height: 1.7rem;
+    background-color: lightyellow;
+    color: lightskyblue;
+  }
+  .quiz-container {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px white;
+    padding: 3rem;
+    width: 60%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    background-color: lightyellow;
+    min-height: 100vh;
+  }
+  .title {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    color: lightskyblue;
+    font-family: "哥特";
+    font-weight: 200;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .title1{
+    color: white;
+    font-family: "哥特";
+    font-weight: 200;
+    text-align: center;
+     font-size: 20rem;
+  }
+  .question {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+  }
+  .option {
+    padding: 1rem;
+    color: black;
+    background: lightskyblue;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  .option:hover {
+    background: hotpink;
+  }
+  .option input:checked .option {
+    background: #83008a;
+    color: lightskyblue;
+  }
+  .controls > * {
+    margin: 1rem;
+  }
+  button {
+    font-family: "哥特";
+    padding: 0.5rem 1.5rem;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-weight: 300;
+    color: white;
+    outline: none;
+    transform: scale(0.98);
+    transition: all 0.2s;
+  }
+  button.previous {
+    background: #5e5564;
+  }
+  button.next {
+    background: hotpink;
+  }
+  button.restart {
+    background: lightskyblue;;
+    color: #00000050;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.4s;
+  }
+  button.restart:hover {
+    color: lightskyblue;;
+  }
+  button:hover,
+  button:focus {
+    transform: scale(1);
+    font-weight: 500;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  }
+  .result {
+    color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    min-height: 100vh;
+  }
+  .final-score {
+    font-size: 2rem;
+    color: lightskyblue;
+  }
+  .announce{
+    color: lightskyblue;
+    font-size: 2rem;
+  }
+  .summary {
+    font-size: 1rem;
+    text-shadow: 1px 1px #ffffff50;
+    color: lightskyblue;
+    background: hotpink;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+  }
+  .summary h1 {
+    align-self: center;
+  }
